@@ -5,9 +5,9 @@ const courseRoutes = require('./server/routers/CourseRouters')
 
 connectDatabase();
 
-app.use(express.json())
+app.use(express.json());
 
-app.use('courses', courseRoutes)
+app.use('/courses', courseRoutes)
 
 const PORT = 3000
 
